@@ -2,4 +2,4 @@
 
 (define collection 'multi)
 (define deps '("base"))
-(define build-deps '("racket-doc"))
+(define build-deps '("racket-doc" "scribble-lib" "data-enumerate-lib"))
