@@ -3,9 +3,9 @@ compiled/
 
 # Racket rendered documentation
 doc/
-**/scribblings/*.html
-**/scribblings/*.css
-**/scribblings/*.js
+*.html
+*.css
+*.js
 
 # common backups, autosaves, lock files, OS meta-files
 *~
