@@ -61,7 +61,7 @@ non-empty-tree-of-strings
                            [x any/c])
          leftist-tree?]{
  Functionally extends @racket[t] by adding @racket[x] and
- returning the extended tree.
+ returns the extended tree.
 
 @examples[#:eval the-eval
 (define empty (leftist-tree string<=?))
@@ -72,7 +72,7 @@ non-empty-tree-of-strings
                                [xs sequence?])
          leftist-tree?]{
  Functionally extends @racket[t] by adding all elements of
- the sequence @racket[xs] and returning the extended tree.
+ the sequence @racket[xs] and returns the extended tree.
 
 @examples[#:eval the-eval
 (define empty (leftist-tree string<=?))
@@ -94,8 +94,8 @@ non-empty-tree-of-strings
 
 @defproc[(leftist-tree-remove-min [t leftist-tree?])
          leftist-tree?]{
- Functionally removes the least element in @racket[t],
- returning the fresh tree.
+ Functionally removes the least element in @racket[t]
+ and returns the fresh tree.
 
 @examples[#:eval the-eval
 (define empty (leftist-tree string<=?))
