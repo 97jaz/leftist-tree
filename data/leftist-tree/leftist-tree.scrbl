@@ -2,6 +2,7 @@
 
 @(require scribble/eval
           (for-label racket/base
+                     racket/contract/base
                      data/leftist-tree))
 
 @(define the-eval (make-base-eval))
@@ -18,7 +19,7 @@ Leftist trees are immutable priority queues.
 @defproc[(leftist-tree [<=? (-> any/c any/c any/c)]
                        [xs sequence? '()])
          leftist-tree?]{
- Makes a new tree containing the elements of @racket[x], ordered by @racket[<=?].
+ Makes a new tree containing the elements of @racket[xs], ordered by @racket[<=?].
 
 @examples[#:eval the-eval
 (define empty-tree-of-strings (leftist-tree string<=?))
